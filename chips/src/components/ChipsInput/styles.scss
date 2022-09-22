@@ -1,0 +1,59 @@
+.chips {
+  display: flex;
+}
+
+.chips_wrapper {
+  display: flex;
+  background: #eff4fa;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.main_input {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  background: inherit;
+  color: #54607c;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.chip {
+  margin: 0 5px;
+  display: flex;
+  padding: 0 15px;
+  background: #cae4fe;
+  border-radius: 5px;
+  font-size: 24px;
+  align-items: center;
+
+  .cross {
+    margin-bottom: 5px;
+    color: #5d80ad;
+    cursor: pointer;
+  }
+
+  input {
+    height: 36px;
+    border: 0;
+    background: inherit;
+    color: #1f4175;
+    width: auto;
+  }
+
+  &.selected {
+    background: skyblue;
+  }
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
